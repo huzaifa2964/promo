@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About — www.promo.in</title>
+    <meta name="description" content="Our mission, vision, and team behind futuristic digital solutions." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { charcoal: '#0e0e0e', neon: '#0d6efd', cyan: '#00e5ff' },
+            fontFamily: { sans: ['Manrope', 'system-ui', 'sans-serif'] },
+            boxShadow: { glow: '0 0 30px rgba(13,110,253,0.35)' }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-charcoal text-white font-sans antialiased">
+    <header class="sticky top-0 z-40 bg-charcoal/70 backdrop-blur border-b border-white/5">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/images/logo-light.svg" alt="Promo" class="h-7" />
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm text-white/80">
+          <a href="about.html" class="text-white">About</a>
+          <a href="services.html" class="hover:text-white">Services</a>
+          <a href="portfolio.html" class="hover:text-white">Portfolio</a>
+          <a href="contact.html" class="hover:text-white">Contact</a>
+          <a href="contact.html" class="px-4 py-2 rounded-full bg-white/5 border border-white/10 hover:bg-white/10">Book a Call</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="py-20 border-b border-white/5">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h1 class="text-4xl md:text-5xl font-extrabold">About us</h1>
+          <p class="mt-4 max-w-2xl text-white/70">We are a modern digital solutions studio crafting cinematic web experiences that perform and convert.</p>
+        </div>
+      </section>
+      <section class="py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-start">
+          <div class="fade-up">
+            <h2 class="text-2xl font-bold">Mission</h2>
+            <p class="mt-3 text-white/70">Blend world-class design with technical performance to deliver business outcomes.</p>
+            <h2 class="mt-10 text-2xl font-bold">Vision</h2>
+            <p class="mt-3 text-white/70">A future where digital feels effortless, expressive, and human.</p>
+          </div>
+          <div class="fade-up">
+            <div class="rounded-2xl bg-white/5 border border-white/10 aspect-[4/3]"></div>
+          </div>
+        </div>
+      </section>
+      <section class="py-20 border-t border-white/5">
+        <div class="mx-auto max-w-5xl px-4">
+          <h2 class="text-2xl font-bold">Our process</h2>
+          <ol class="mt-6 grid md:grid-cols-4 gap-4 text-sm">
+            <li class="p-4 rounded-xl bg-white/5 border border-white/10"><div class="font-semibold">1. Discover</div><div class="text-white/70 mt-1">Goals, audience, and constraints.</div></li>
+            <li class="p-4 rounded-xl bg-white/5 border border-white/10"><div class="font-semibold">2. Design</div><div class="text-white/70 mt-1">Flows, visuals, and motion.</div></li>
+            <li class="p-4 rounded-xl bg-white/5 border border-white/10"><div class="font-semibold">3. Build</div><div class="text-white/70 mt-1">Accessible, performant code.</div></li>
+            <li class="p-4 rounded-xl bg-white/5 border border-white/10"><div class="font-semibold">4. Launch</div><div class="text-white/70 mt-1">QA, analytics, iteration.</div></li>
+          </ol>
+        </div>
+      </section>
+      <section class="py-20 border-t border-white/5">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 class="text-2xl font-bold">Team</h2>
+          <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+              <div class="h-28 w-28 rounded-full bg-white/10"></div>
+              <div class="mt-4 font-semibold">Lead Designer</div>
+              <div class="text-white/60 text-sm">Motion & Visual Systems</div>
+            </div>
+            <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+              <div class="h-28 w-28 rounded-full bg-white/10"></div>
+              <div class="mt-4 font-semibold">Lead Engineer</div>
+              <div class="text-white/60 text-sm">Web Performance & Frontend</div>
+            </div>
+            <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+              <div class="h-28 w-28 rounded-full bg-white/10"></div>
+              <div class="mt-4 font-semibold">Strategy</div>
+              <div class="text-white/60 text-sm">Product & Growth</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+     <!-- Footer -->
+     <footer class="border-t border-white/5 py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-10">
+        <div>
+          <img src="assets/images/logo-light.svg" alt="Promo" class="h-7 opacity-90" />
+          <p class="mt-4 text-white/60 text-sm">Futuristic digital solutions. Motion-first, conversion-focused.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold">Links</h4>
+          <ul class="mt-3 space-y-2 text-white/70 text-sm">
+            <li><a href="about.html" class="hover:text-white">About</a></li>
+            <li><a href="services.html" class="hover:text-white">Services</a></li>
+            <li><a href="portfolio.html" class="hover:text-white">Portfolio</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold">Services</h4>
+          <ul class="mt-3 space-y-2 text-white/70 text-sm">
+            <li>Marketing Websites</li>
+            <li>Product UI/UX</li>
+            <li>Brand Systems</li>
+            <li>Performance & SEO</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold">Contact</h4>
+          <ul class="mt-3 space-y-2 text-white/70 text-sm">
+            <li>hello@promo.example</li>
+            <li>+1 (000) 000-0000</li>
+          </ul>
+          <form class="mt-4 flex items-center gap-2">
+            <input type="email" placeholder="Email for updates" class="w-full px-3 py-2 rounded bg-white/5 border border-white/10 placeholder:text-white/40" />
+            <button class="px-4 py-2 rounded bg-neon text-white">Join</button>
+          </form>
+          <div class="mt-4 flex items-center gap-3 text-white/60">
+            <a href="#" class="hover:text-white"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="hover:text-white"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="hover:text-white"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 text-center text-xs text-white/50">
+        <a href="privacy.html" class="hover:text-white">Privacy</a> •
+        <a href="terms.html" class="hover:text-white">Terms</a> •
+        <span>© <span id="year"></span> www.promo.in</span>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button id="backToTop" class="fixed bottom-6 right-6 z-40 hidden p-3 rounded-full bg-white/10 border border-white/10 hover:bg-white/20">
+      <i class="fa-solid fa-arrow-up"></i>
+      <span class="sr-only">Back to top</span>
+    </button>
+
+    <div class="custom-cursor"></div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.38/bundled/lenis.min.js"></script>
+    <script src="js/cursor.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  
+</html>
+
+
