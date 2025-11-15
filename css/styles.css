@@ -1,17 +1,136 @@
-/* Base, layout, and animations (compiled CSS for runtime). SCSS sources can be added under /scss. */
-:root{--charcoal:#0e0e0e;--neon:#0d6efd;--cyan:#00e5ff}
-html,body{background:#0e0e0e;color:#fff}
-.noise{position:absolute;inset:0;background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="2" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23n)" opacity="0.04"/></svg>');}
-.radial{position:absolute;inset:-20%;background:radial-gradient(50% 50% at 50% 50%, rgba(13,110,253,0.18) 0%, rgba(13,110,253,0) 60%)}
-.custom-cursor{position:fixed;top:0;left:0;width:20px;height:20px;border:2px solid var(--neon);border-radius:50%;pointer-events:none;mix-blend-mode:difference;transition:transform .2s ease,opacity .2s ease;z-index:9999;box-shadow:0 0 20px rgba(13,110,253,.35)}
+/* Western Raos LLC — Light Theme CSS */
+:root {
+  --charcoal: #ffffff;
+  --neon: #0066cc;
+  --cyan: #00a8e8;
+}
 
-/* Cards subtle 3D tilt */
-.card3d{transform-style:preserve-3d;transition:transform .3s ease, box-shadow .3s ease}
-.card3d:hover{transform:translateY(-4px);box-shadow:0 10px 40px rgba(0,0,0,.35)}
+html, body {
+  background: var(--charcoal);
+  color: #0b1220;
+  font-family: 'Manrope', system-ui, sans-serif;
+}
 
-/* Reduce motion for users pref */
-@media (prefers-reduced-motion: reduce){
-  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+/* Noise background (subtle) */
+.noise {
+  position: absolute;
+  inset: 0;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="2" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23n)" opacity="0.01"/></svg>');
+  opacity: 0.3;
+}
+
+/* Radial gradient (light blue) */
+.radial {
+  position: absolute;
+  inset: -20%;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 102, 204, 0.08) 0%, rgba(0, 102, 204, 0) 60%);
+}
+
+/* Custom cursor (light theme) */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--neon);
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: normal;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  z-index: 9999;
+  box-shadow: 0 0 8px rgba(0, 102, 204, 0.2);
+}
+
+/* Cards 3D tilt effect */
+.card3d {
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card3d:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 102, 204, 0.12);
+}
+
+/* Utility class overrides for light theme compatibility */
+.text-white {
+  color: #0b1220 !important;
+}
+
+.text-white\/70 {
+  color: rgba(11, 18, 32, 0.7) !important;
+}
+
+.text-white\/80 {
+  color: rgba(11, 18, 32, 0.85) !important;
+}
+
+.text-white\/50 {
+  color: rgba(11, 18, 32, 0.5) !important;
+}
+
+.text-white\/60 {
+  color: rgba(11, 18, 32, 0.6) !important;
+}
+
+.bg-white\/5 {
+  background-color: rgba(11, 18, 32, 0.04) !important;
+}
+
+.bg-white\/10 {
+  background-color: rgba(11, 18, 32, 0.06) !important;
+}
+
+.border-white\/5 {
+  border-color: rgba(11, 18, 32, 0.04) !important;
+}
+
+.border-white\/10 {
+  border-color: rgba(11, 18, 32, 0.06) !important;
+}
+
+/* Hover states for light theme */
+.hover\:bg-white\/5:hover {
+  background-color: rgba(11, 18, 32, 0.06) !important;
+}
+
+.hover\:text-white:hover {
+  color: var(--neon) !important;
+}
+
+.hover\:text-white\/60:hover {
+  color: rgba(11, 18, 32, 0.6) !important;
+}
+
+/* Selection styling */
+.selection\:bg-neon\/30::selection {
+  background: rgba(0, 102, 204, 0.3) !important;
+}
+
+/* Link styling */
+a {
+  color: var(--neon);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #0052a3;
+}
+
+/* Button styling */
+button {
+  font-family: 'Manrope', system-ui, sans-serif;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 

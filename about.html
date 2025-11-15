@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About — www.promo.in</title>
-    <meta name="description" content="Our mission, vision, and team behind futuristic digital solutions." />
+    <title>About Western Raos LLC — Authorized Internet Services Retailer</title>
+    <meta name="description" content="Learn about Western Raos LLC, a leading authorized retailer of internet services, broadband, and connectivity solutions." />
+    <meta name="theme-color" content="#ffffff" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
-            colors: { charcoal: '#0e0e0e', neon: '#0d6efd', cyan: '#00e5ff' },
+            colors: { charcoal: '#ffffff', neon: '#0066cc', cyan: '#00a8e8' },
             fontFamily: { sans: ['Manrope', 'system-ui', 'sans-serif'] },
-            boxShadow: { glow: '0 0 30px rgba(13,110,253,0.35)' }
+            boxShadow: { glow: '0 0 20px rgba(0,102,204,0.15)' }
           }
         }
       }
@@ -22,141 +23,218 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
-  <body class="bg-charcoal text-white font-sans antialiased">
-    <header class="sticky top-0 z-40 bg-charcoal/70 backdrop-blur border-b border-white/5">
+  <body class="bg-charcoal text-gray-900 font-sans antialiased">
+    <header class="sticky top-0 z-40 bg-white border-b border-gray-200">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <a href="index.html" class="flex items-center gap-3">
-          <img src="assets/images/logo-light.svg" alt="Promo" class="h-7" />
+          <h1 class="text-lg font-bold text-neon">Western Raos LLC</h1>
         </a>
-        <nav class="hidden md:flex items-center gap-8 text-sm text-white/80">
-          <a href="about.html" class="text-white">About</a>
-          <a href="services.html" class="hover:text-white">Services</a>
-          <a href="portfolio.html" class="hover:text-white">Portfolio</a>
-          <a href="contact.html" class="hover:text-white">Contact</a>
-          <a href="contact.html" class="px-4 py-2 rounded-full bg-white/5 border border-white/10 hover:bg-white/10">Book a Call</a>
+        <nav class="hidden md:flex items-center gap-8 text-sm text-gray-700">
+          <a href="about.html" class="text-neon font-semibold">About</a>
+          <a href="services.html" class="hover:text-neon">Services</a>
+          <a href="portfolio.html" class="hover:text-neon">Coverage</a>
+          <a href="contact.html" class="hover:text-neon">Contact</a>
+          <a href="tel:6462223915" class="px-4 py-2 rounded-full bg-neon text-white hover:shadow-glow font-semibold">Call: 646-222-3915</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="py-20 border-b border-white/5">
+      <section class="py-20 border-b border-gray-200 bg-blue-50">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h1 class="text-4xl md:text-5xl font-extrabold">About us</h1>
-          <p class="mt-4 max-w-2xl text-white/70">We are a modern digital solutions studio crafting cinematic web experiences that perform and convert.</p>
+          <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900">About Western Raos LLC</h1>
+          <p class="mt-4 max-w-2xl text-gray-700 text-lg">Leading authorized retailer delivering reliable internet services, broadband solutions, and exceptional customer support.</p>
         </div>
       </section>
+
       <section class="py-20">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-start">
-          <div class="fade-up">
-            <h2 class="text-2xl font-bold">Mission</h2>
-            <p class="mt-3 text-white/70">Blend world-class design with technical performance to deliver business outcomes.</p>
-            <h2 class="mt-10 text-2xl font-bold">Vision</h2>
-            <p class="mt-3 text-white/70">A future where digital feels effortless, expressive, and human.</p>
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-start">
+          <div>
+            <div class="inline-block bg-neon/10 text-neon px-4 py-1 rounded-full text-sm font-semibold mb-4">Our Purpose</div>
+            <h2 class="text-3xl font-bold text-gray-900">Mission</h2>
+            <p class="mt-4 text-gray-700 text-lg leading-relaxed">
+              To provide fast, reliable, and affordable internet services to every household and business. We are committed to bridging the digital divide and ensuring connectivity for all.
+            </p>
+            <h2 class="mt-12 text-3xl font-bold text-gray-900">Vision</h2>
+            <p class="mt-4 text-gray-700 text-lg leading-relaxed">
+              A world where high-speed internet is accessible, affordable, and empowers communities to grow, learn, and connect.
+            </p>
           </div>
-          <div class="fade-up">
-            <div class="rounded-2xl bg-white/5 border border-white/10 aspect-[4/3]"></div>
+          <div class="rounded-2xl bg-gradient-to-br from-blue-100 to-blue-50 border border-gray-300 p-12 flex items-center justify-center min-h-96">
+            <div class="text-center">
+              <i class="fa-solid fa-wifi text-neon text-6xl mb-4"></i>
+              <p class="text-gray-600 font-semibold">Connecting Communities</p>
+            </div>
           </div>
         </div>
       </section>
-      <section class="py-20 border-t border-white/5">
-        <div class="mx-auto max-w-5xl px-4">
-          <h2 class="text-2xl font-bold">Our process</h2>
-          <ol class="mt-6 grid md:grid-cols-4 gap-4 text-sm">
-            <li class="p-4 rounded-xl bg-white/5 border border-white/10"><div class="font-semibold">1. Discover</div><div class="text-white/70 mt-1">Goals, audience, and constraints.</div></li>
-            <li class="p-4 rounded-xl bg-white/5 border border-white/10"><div class="font-semibold">2. Design</div><div class="text-white/70 mt-1">Flows, visuals, and motion.</div></li>
-            <li class="p-4 rounded-xl bg-white/5 border border-white/10"><div class="font-semibold">3. Build</div><div class="text-white/70 mt-1">Accessible, performant code.</div></li>
-            <li class="p-4 rounded-xl bg-white/5 border border-white/10"><div class="font-semibold">4. Launch</div><div class="text-white/70 mt-1">QA, analytics, iteration.</div></li>
-          </ol>
-        </div>
-      </section>
-      <section class="py-20 border-t border-white/5">
+
+      <section class="py-20 border-t border-gray-200 bg-gray-50">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 class="text-2xl font-bold">Team</h2>
-          <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
-              <div class="h-28 w-28 rounded-full bg-white/10"></div>
-              <div class="mt-4 font-semibold">Lead Designer</div>
-              <div class="text-white/60 text-sm">Motion & Visual Systems</div>
+          <h2 class="text-3xl font-bold text-gray-900 text-center">Core Values</h2>
+          <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="p-6 rounded-2xl bg-white border border-gray-300 hover:shadow-lg transition">
+              <div class="text-neon text-3xl mb-4"><i class="fa-solid fa-handshake"></i></div>
+              <h3 class="font-bold text-gray-900">Reliability</h3>
+              <p class="mt-2 text-gray-700 text-sm">We stand behind every service and commitment we make.</p>
             </div>
-            <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
-              <div class="h-28 w-28 rounded-full bg-white/10"></div>
-              <div class="mt-4 font-semibold">Lead Engineer</div>
-              <div class="text-white/60 text-sm">Web Performance & Frontend</div>
+            <div class="p-6 rounded-2xl bg-white border border-gray-300 hover:shadow-lg transition">
+              <div class="text-neon text-3xl mb-4"><i class="fa-solid fa-person-circle-check"></i></div>
+              <h3 class="font-bold text-gray-900">Customer First</h3>
+              <p class="mt-2 text-gray-700 text-sm">Your satisfaction is our top priority.</p>
             </div>
-            <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
-              <div class="h-28 w-28 rounded-full bg-white/10"></div>
-              <div class="mt-4 font-semibold">Strategy</div>
-              <div class="text-white/60 text-sm">Product & Growth</div>
+            <div class="p-6 rounded-2xl bg-white border border-gray-300 hover:shadow-lg transition">
+              <div class="text-neon text-3xl mb-4"><i class="fa-solid fa-lightbulb"></i></div>
+              <h3 class="font-bold text-gray-900">Innovation</h3>
+              <p class="mt-2 text-gray-700 text-sm">We constantly seek better solutions in connectivity.</p>
             </div>
+            <div class="p-6 rounded-2xl bg-white border border-gray-300 hover:shadow-lg transition">
+              <div class="text-neon text-3xl mb-4"><i class="fa-solid fa-star"></i></div>
+              <h3 class="font-bold text-gray-900">Excellence</h3>
+              <p class="mt-2 text-gray-700 text-sm">We deliver quality service exceeding standards.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 border-t border-gray-200">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold text-gray-900">Why Choose Us?</h2>
+          <div class="mt-12 grid md:grid-cols-3 gap-8">
+            <div class="flex gap-4">
+              <div class="text-neon text-2xl flex-shrink-0"><i class="fa-solid fa-check-circle"></i></div>
+              <div>
+                <h3 class="font-bold text-gray-900">Authorized Partner</h3>
+                <p class="mt-1 text-gray-700">Licensed and certified retailer for major service providers.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="text-neon text-2xl flex-shrink-0"><i class="fa-solid fa-check-circle"></i></div>
+              <div>
+                <h3 class="font-bold text-gray-900">Expert Installation</h3>
+                <p class="mt-1 text-gray-700">Professional technicians for fast setup of services.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="text-neon text-2xl flex-shrink-0"><i class="fa-solid fa-check-circle"></i></div>
+              <div>
+                <h3 class="font-bold text-gray-900">24/7 Support</h3>
+                <p class="mt-1 text-gray-700">Round-the-clock customer support always available.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="text-neon text-2xl flex-shrink-0"><i class="fa-solid fa-check-circle"></i></div>
+              <div>
+                <h3 class="font-bold text-gray-900">Competitive Pricing</h3>
+                <p class="mt-1 text-gray-700">Best rates without compromising on quality.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="text-neon text-2xl flex-shrink-0"><i class="fa-solid fa-check-circle"></i></div>
+              <div>
+                <h3 class="font-bold text-gray-900">Wide Coverage</h3>
+                <p class="mt-1 text-gray-700">Serving multiple regions and communities.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="text-neon text-2xl flex-shrink-0"><i class="fa-solid fa-check-circle"></i></div>
+              <div>
+                <h3 class="font-bold text-gray-900">Customer Advocacy</h3>
+                <p class="mt-1 text-gray-700">We work on your behalf with service providers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 border-t border-gray-200 bg-gradient-to-r from-neon to-blue-600">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center text-white">
+            <div>
+              <div class="text-4xl font-bold">5000+</div>
+              <p class="mt-2">Happy Customers</p>
+            </div>
+            <div>
+              <div class="text-4xl font-bold">50+</div>
+              <p class="mt-2">Service Area Towns</p>
+            </div>
+            <div>
+              <div class="text-4xl font-bold">99%</div>
+              <p class="mt-2">Customer Satisfaction</p>
+            </div>
+            <div>
+              <div class="text-4xl font-bold">24/7</div>
+              <p class="mt-2">Customer Support</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 border-t border-gray-200 bg-blue-50">
+        <div class="mx-auto max-w-4xl px-4 text-center">
+          <h2 class="text-3xl font-bold text-gray-900">Ready to Connect?</h2>
+          <p class="mt-4 text-gray-700 text-lg">Get fast, reliable internet from Western Raos LLC today.</p>
+          <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <a href="tel:6462223915" class="px-6 py-3 bg-neon text-white rounded-full hover:shadow-lg font-semibold">Call Now: 646-222-3915</a>
+            <a href="contact.html" class="px-6 py-3 border-2 border-neon text-neon rounded-full hover:bg-neon hover:text-white font-semibold">Contact Us</a>
           </div>
         </div>
       </section>
     </main>
      <!-- Footer -->
-     <footer class="border-t border-white/5 py-16">
+     <footer class="border-t border-gray-300 bg-gray-900 text-white py-16">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-10">
         <div>
-          <img src="assets/images/logo-light.svg" alt="Promo" class="h-7 opacity-90" />
-          <p class="mt-4 text-white/60 text-sm">Futuristic digital solutions. Motion-first, conversion-focused.</p>
+          <h3 class="text-lg font-bold text-white">Western Raos LLC</h3>
+          <p class="mt-2 text-gray-300 text-sm">Authorized Internet Services Retailer. Fast, reliable broadband.</p>
         </div>
         <div>
-          <h4 class="font-semibold">Links</h4>
-          <ul class="mt-3 space-y-2 text-white/70 text-sm">
+          <h4 class="font-semibold">Quick Links</h4>
+          <ul class="mt-3 space-y-2 text-gray-400 text-sm">
             <li><a href="about.html" class="hover:text-white">About</a></li>
             <li><a href="services.html" class="hover:text-white">Services</a></li>
-            <li><a href="portfolio.html" class="hover:text-white">Portfolio</a></li>
+            <li><a href="portfolio.html" class="hover:text-white">Coverage</a></li>
             <li><a href="contact.html" class="hover:text-white">Contact</a></li>
           </ul>
         </div>
         <div>
           <h4 class="font-semibold">Services</h4>
-          <ul class="mt-3 space-y-2 text-white/70 text-sm">
-            <li>Marketing Websites</li>
-            <li>Product UI/UX</li>
-            <li>Brand Systems</li>
-            <li>Performance & SEO</li>
+          <ul class="mt-3 space-y-2 text-gray-400 text-sm">
+            <li>High-Speed Internet</li>
+            <li>Cable TV & Entertainment</li>
+            <li>Home Phone Service</li>
+            <li>Business Broadband</li>
           </ul>
         </div>
         <div>
           <h4 class="font-semibold">Contact</h4>
-          <ul class="mt-3 space-y-2 text-white/70 text-sm">
-            <li>hello@promo.example</li>
-            <li>+1 (000) 000-0000</li>
+          <ul class="mt-3 space-y-2 text-gray-300 text-sm">
+            <li><strong>Phone:</strong> <a href="tel:6462223915" class="hover:text-neon">646-222-3915</a></li>
+            <li><strong>Email:</strong> <a href="mailto:westernraosllc@gmail.com" class="hover:text-neon">westernraosllc@gmail.com</a></li>
           </ul>
-          <form class="mt-4 flex items-center gap-2">
-            <input type="email" placeholder="Email for updates" class="w-full px-3 py-2 rounded bg-white/5 border border-white/10 placeholder:text-white/40" />
-            <button class="px-4 py-2 rounded bg-neon text-white">Join</button>
-          </form>
-          <div class="mt-4 flex items-center gap-3 text-white/60">
-            <a href="#" class="hover:text-white"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#" class="hover:text-white"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#" class="hover:text-white"><i class="fa-brands fa-github"></i></a>
-          </div>
         </div>
       </div>
-      <div class="mt-12 text-center text-xs text-white/50">
+      <div class="mt-12 text-center text-xs text-gray-500 border-t border-gray-700 pt-8">
         <a href="privacy.html" class="hover:text-white">Privacy</a> •
         <a href="terms.html" class="hover:text-white">Terms</a> •
-        <span>© <span id="year"></span> www.promo.in</span>
+        <span>© <span id="year"></span> Western Raos LLC. All Rights Reserved.</span>
       </div>
     </footer>
 
     <!-- Back to top -->
-    <button id="backToTop" class="fixed bottom-6 right-6 z-40 hidden p-3 rounded-full bg-white/10 border border-white/10 hover:bg-white/20">
+    <button id="backToTop" class="fixed bottom-6 right-6 z-40 hidden p-3 rounded-full bg-neon text-white border border-neon hover:bg-blue-700">
       <i class="fa-solid fa-arrow-up"></i>
       <span class="sr-only">Back to top</span>
     </button>
 
     <div class="custom-cursor"></div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.38/bundled/lenis.min.js"></script>
     <script src="js/cursor.js" defer></script>
-    <script src="js/animations.js" defer></script>
-    <script src="js/main.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
-  
 </html>
 
 
